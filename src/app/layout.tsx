@@ -25,6 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
+      <head>
+        <link rel="preload" href="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode" as="fetch" crossOrigin="anonymous" />
+      </head>
       <body className={`antialiased ${lato.className}`} suppressHydrationWarning>
         <ThemeProvider
           attribute="class"

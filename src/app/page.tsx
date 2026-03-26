@@ -6,8 +6,7 @@ import { Card } from "@/components/ui/card";
 import { Spotlight } from "@/components/ui/spotlight";
 import { EvervaultCard, Icon } from "@/components/ui/evervault-card";
 
-const SplineScene = dynamic(() => import("@/components/ui/splite").then(mod => mod.SplineScene), { ssr: false });
-
+import { SplineScene } from "@/components/ui/splite";
 import { LogoCloud } from "@/components/ui/logo-cloud-2";
 import { TestimonialsColumn } from "@/components/ui/testimonials-columns-1";
 import { GlobePulse } from "@/components/ui/cobe-globe-pulse";
