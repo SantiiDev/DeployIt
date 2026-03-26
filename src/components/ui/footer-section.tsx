@@ -1,17 +1,6 @@
 "use client"
 
 import * as React from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Switch } from "@/components/ui/switch"
-import { Textarea } from "@/components/ui/textarea"
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip"
 import { MessageCircle, Camera, Globe, Moon, Send, Sun, Rss } from "lucide-react"
 import { useTheme } from "next-themes"
 
@@ -39,19 +28,18 @@ function Footerdemo() {
               Únete a nuestro newsletter para recibir los últimos insights y ofertas exclusivas.
             </p>
             <form className="relative">
-              <Input
+              <input
                 type="email"
                 placeholder="Ingresa tu email"
-                className="pr-12 backdrop-blur-sm rounded-full"
+                className="w-full pr-12 backdrop-blur-sm rounded-full bg-background border border-input px-4 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring"
               />
-              <Button
+              <button
                 type="submit"
-                size="icon"
-                className="absolute right-1 top-1 h-8 w-8 rounded-full bg-primary text-primary-foreground transition-transform hover:scale-105"
+                className="absolute right-1 top-1 h-8 w-8 rounded-full bg-primary text-primary-foreground transition-transform hover:scale-105 inline-flex items-center justify-center"
               >
                 <Send className="h-4 w-4" />
                 <span className="sr-only">Subscribe</span>
-              </Button>
+              </button>
             </form>
             <div className="absolute -right-4 top-0 h-24 w-24 rounded-full bg-primary/10 blur-2xl" />
           </div>
@@ -87,70 +75,35 @@ function Footerdemo() {
           <div className="relative">
             <h3 className="mb-4 text-lg font-semibold">Síguenos</h3>
             <div className="mb-6 flex space-x-4">
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Button variant="outline" size="icon" className="rounded-full">
-                      <MessageCircle className="h-4 w-4" />
-                      <span className="sr-only">Facebook</span>
-                    </Button>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>Follow us on Facebook</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Button variant="outline" size="icon" className="rounded-full">
-                      <Rss className="h-4 w-4" />
-                      <span className="sr-only">Twitter</span>
-                    </Button>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>Follow us on Twitter</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Button variant="outline" size="icon" className="rounded-full">
-                      <Camera className="h-4 w-4" />
-                      <span className="sr-only">Instagram</span>
-                    </Button>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>Follow us on Instagram</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Button variant="outline" size="icon" className="rounded-full">
-                      <Globe className="h-4 w-4" />
-                      <span className="sr-only">LinkedIn</span>
-                    </Button>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>Connect with us on LinkedIn</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
+              <a href="#" className="inline-flex items-center justify-center h-10 w-10 rounded-full border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors" title="Facebook">
+                <MessageCircle className="h-4 w-4" />
+                <span className="sr-only">Facebook</span>
+              </a>
+              <a href="#" className="inline-flex items-center justify-center h-10 w-10 rounded-full border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors" title="Twitter">
+                <Rss className="h-4 w-4" />
+                <span className="sr-only">Twitter</span>
+              </a>
+              <a href="#" className="inline-flex items-center justify-center h-10 w-10 rounded-full border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors" title="Instagram">
+                <Camera className="h-4 w-4" />
+                <span className="sr-only">Instagram</span>
+              </a>
+              <a href="#" className="inline-flex items-center justify-center h-10 w-10 rounded-full border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors" title="LinkedIn">
+                <Globe className="h-4 w-4" />
+                <span className="sr-only">LinkedIn</span>
+              </a>
             </div>
             <div className="flex items-center space-x-2">
               <Sun className="h-4 w-4" />
-              <Switch
-                id="dark-mode"
-                checked={isDarkMode}
-                onCheckedChange={(checked) => setTheme(checked ? "dark" : "light")}
-              />
+              <button
+                onClick={() => setTheme(isDarkMode ? "light" : "dark")}
+                className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${isDarkMode ? 'bg-primary' : 'bg-input'}`}
+                role="switch"
+                aria-checked={isDarkMode}
+                aria-label="Toggle dark mode"
+              >
+                <span className={`inline-block h-4 w-4 transform rounded-full bg-background transition-transform ${isDarkMode ? 'translate-x-6' : 'translate-x-1'}`} />
+              </button>
               <Moon className="h-4 w-4" />
-              <Label htmlFor="dark-mode" className="sr-only">
-                Toggle dark mode
-              </Label>
             </div>
           </div>
         </div>

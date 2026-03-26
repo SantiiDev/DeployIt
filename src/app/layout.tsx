@@ -11,8 +11,8 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "DeployIt - Modern Web Components Showcase",
-  description: "A stunning showcase of modern web components built with Shadcn, Tailwind CSS, and React. Featuring 3D scenes, interactive cards, animated testimonials, world maps, and more.",
+  title: "DeployIt — Ingeniería Web para Marcas Modernas",
+  description: "Desarrollo web profesional: landing pages ultrarrápidas, tiendas online escalables y aplicaciones a medida. Potenciado por Next.js, React y un stack moderno.",
 };
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning>
       <body className={`antialiased ${lato.className}`} suppressHydrationWarning>
         <ThemeProvider
           attribute="class"

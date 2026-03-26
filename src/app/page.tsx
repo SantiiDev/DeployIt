@@ -15,10 +15,7 @@ import { Methodology } from "@/components/ui/methodology";
 import { FaqsSection } from "@/components/ui/faqs-1";
 import { Navbar1 } from "@/components/ui/navbar-1";
 import { Footerdemo } from "@/components/ui/footer-section";
-import { Pricing } from "@/components/ui/pricing";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 
 /* ——— Section 5: Testimonials Data ——— */
 const testimonials = [
