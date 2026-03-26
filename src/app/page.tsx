@@ -140,9 +140,9 @@ export default function Home() {
       {/* ===== Section 2: Evervault Card ===== */}
       <section id="services" className="py-20 md:py-28 max-w-7xl mx-auto w-full px-4 md:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 60 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
           viewport={{ once: true, margin: "-100px" }}
         >
           <div className="text-center mb-12">
@@ -205,9 +205,9 @@ export default function Home() {
       {/* ===== Section 3: Methodology ===== */}
       <section id="methodology" className="py-20 md:py-28 max-w-7xl mx-auto w-full px-4 md:px-6 lg:px-8 relative z-10">
         <motion.div
-           initial={{ opacity: 0, y: 60 }}
+           initial={{ opacity: 0, y: 100 }}
            whileInView={{ opacity: 1, y: 0 }}
-           transition={{ duration: 0.8, ease: "easeOut" }}
+           transition={{ duration: 1.2, ease: "easeOut" }}
            viewport={{ once: true, margin: "-100px" }}
         >
           <div className="text-center mb-16">
@@ -229,9 +229,9 @@ export default function Home() {
       <section id="logos" className="py-12 md:py-16 w-full overflow-hidden">
         <motion.div
           className="w-full"
-          initial={{ opacity: 0, y: 60 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
           viewport={{ once: true, margin: "-100px" }}
         >
           <div className="relative mx-auto w-full">
@@ -249,9 +249,9 @@ export default function Home() {
       {/* ===== Section 5: Testimonials ===== */}
       <section id="testimonials" className="py-20 md:py-28 relative max-w-7xl mx-auto w-full px-4 md:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 60 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
           viewport={{ once: true, margin: "-100px" }}
         >
           <div className="flex flex-col items-center justify-center max-w-[540px] mx-auto">
@@ -287,9 +287,9 @@ export default function Home() {
       {/* ===== Section 6: World Map ===== */}
       <section id="world-map" className="py-20 md:py-28 container mx-auto px-4 md:px-6 lg:px-8 w-full">
         <motion.div
-          initial={{ opacity: 0, y: 60 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
           viewport={{ once: true, margin: "-100px" }}
           className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-7xl mx-auto"
         >
@@ -326,9 +326,9 @@ export default function Home() {
       {/* ===== Section 7: FAQ ===== */}
       <section id="faq" className="py-20 md:py-28 max-w-7xl mx-auto w-full px-4 md:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 60 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
           viewport={{ once: true, margin: "-100px" }}
         >
           <FaqsSection />
