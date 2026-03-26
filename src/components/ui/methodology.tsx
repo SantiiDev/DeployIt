@@ -159,6 +159,16 @@ export function Methodology() {
           })}
         </div>
       </div>
+
+      {/* Mobile-only CTA button */}
+      <div className="mt-6 md:hidden">
+        <a
+          href="#services"
+          className="inline-flex items-center justify-center w-full px-5 py-3 text-base bg-foreground text-background rounded-full hover:opacity-80 transition-opacity font-medium"
+        >
+          Comenzar Proyecto
+        </a>
+      </div>
     </div>
   );
 }
