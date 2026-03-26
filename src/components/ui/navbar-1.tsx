@@ -27,14 +27,6 @@ const Navbar1 = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen)
 
-  const handleMobileNav = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
-    setIsOpen(false);
-    setTimeout(() => {
-      document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
-    }, 400); // give enough time for menu exit animation
-  }
-
   return (
     <motion.div 
       initial={{ y: -100, opacity: 0 }}
@@ -104,6 +96,17 @@ const Navbar1 = () => {
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
           >
+            <motion.div
+              className="absolute top-6 left-6"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+            >
+              <Link href="#" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
+                <img src="/logo2.png" alt="Deployit Logo" className="h-8 w-8 object-contain" />
+                <span className="font-bold text-xl text-gray-900 tracking-tight">Deployit</span>
+              </Link>
+            </motion.div>
             <motion.button
               className="absolute top-6 right-6 p-2"
               onClick={toggleMenu}
@@ -123,9 +126,9 @@ const Navbar1 = () => {
                   transition={{ delay: i * 0.1 + 0.1 }}
                   exit={{ opacity: 0, x: 20 }}
                 >
-                  <Link href={item.href} className="text-base text-gray-900 font-medium" onClick={(e) => handleMobileNav(e, item.href)}>
+                  <a href={item.href} className="text-base text-gray-900 font-medium" onClick={() => setIsOpen(false)}>
                     {item.name}
-                  </Link>
+                  </a>
                 </motion.div>
               ))}
 
@@ -136,13 +139,13 @@ const Navbar1 = () => {
                 exit={{ opacity: 0, y: 20 }}
                 className="pt-6"
               >
-                  <Link
+                  <a
                     href="#services"
                     className="inline-flex items-center justify-center w-full px-5 py-3 text-base bg-black text-white rounded-full hover:bg-gray-800 transition-colors cursor-pointer"
-                    onClick={(e) => handleMobileNav(e, "#services")}
+                    onClick={() => setIsOpen(false)}
                   >
                     Comenzar Proyecto
-                  </Link>
+                  </a>
               </motion.div>
             </div>
           </motion.div>
