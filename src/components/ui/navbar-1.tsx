@@ -140,7 +140,7 @@ const Navbar1 = () => {
                 className="pt-6"
               >
                   <a
-                    href="#services"
+                    href="/start"
                     className="inline-flex items-center justify-center w-full px-5 py-3 text-base bg-black text-white rounded-full hover:bg-gray-800 transition-colors cursor-pointer"
                     onClick={() => setIsOpen(false)}
                   >
