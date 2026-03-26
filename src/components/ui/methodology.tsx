@@ -121,37 +121,43 @@ export function Methodology() {
       </div>
 
       {/* ── Three cards side by side ── */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
-        {steps.map((step, index) => {
-          const isActive = index === activeStep;
-          return (
-            <motion.div
-              key={step.id}
-              animate={{ opacity: isActive ? 1 : 0.3, scale: isActive ? 1 : 0.97 }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
-              onClick={() => setActiveStep(index)}
-              className={`cursor-pointer rounded-xl border p-5 flex flex-col gap-4 transition-colors duration-300 ${
-                isActive ? "bg-card border-border shadow-sm" : "bg-card/60 border-border/50"
-              }`}
-            >
-              <div>
-                <h3 className="text-base md:text-lg font-bold text-foreground mb-1">{step.title}</h3>
-                <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">{step.description}</p>
-              </div>
+      <div className="relative w-full overflow-hidden pb-4 px-1">
+        <div 
+          className="flex transition-transform duration-500 ease-in-out md:grid md:grid-cols-3 md:gap-4 md:!transform-none"
+          style={{ transform: `translateX(-${activeStep * 100}%)` }}
+        >
+          {steps.map((step, index) => {
+            const isActive = index === activeStep;
+            return (
+              <div key={step.id} className="w-full flex-shrink-0 px-2 md:px-0 md:w-auto">
+                <motion.div
+                  animate={{ opacity: isActive ? 1 : 0.4, scale: isActive ? 1 : 0.95 }}
+                  transition={{ duration: 0.4, ease: "easeOut" }}
+                  onClick={() => setActiveStep(index)}
+                  className={`cursor-pointer h-full rounded-xl border p-5 flex flex-col gap-4 transition-colors duration-300 ${
+                    isActive ? "bg-card border-border shadow-sm" : "bg-card/40 border-border/30"
+                  }`}
+                >
+                  <div>
+                    <h3 className="text-base md:text-lg font-bold text-foreground mb-1">{step.title}</h3>
+                    <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">{step.description}</p>
+                  </div>
 
-              <div className="bg-secondary rounded-lg border border-border overflow-hidden flex-1">
-                <div className="bg-muted flex items-center px-3 py-2 border-b border-border">
-                  <span className="text-[10px] text-muted-foreground font-mono select-none">{step.file}</span>
-                </div>
-                <div className="p-3 font-mono text-[11px] md:text-xs leading-relaxed">
-                  {step.lines.map((line, i) => (
-                    <div key={i} style={{ color: colorMap[line.color] }}>{line.text || "\u00A0"}</div>
-                  ))}
-                </div>
+                  <div className="bg-secondary rounded-lg border border-border overflow-hidden flex-1 flex flex-col">
+                    <div className="bg-muted flex items-center px-3 py-2 border-b border-border">
+                      <span className="text-[10px] text-muted-foreground font-mono select-none">{step.file}</span>
+                    </div>
+                    <div className="p-3 font-mono text-[11px] md:text-xs leading-relaxed flex-1 overflow-x-auto">
+                      {step.lines.map((line, i) => (
+                        <div key={i} style={{ color: colorMap[line.color] }}>{line.text || "\u00A0"}</div>
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
               </div>
-            </motion.div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );

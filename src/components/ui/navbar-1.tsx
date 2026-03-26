@@ -27,6 +27,14 @@ const Navbar1 = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen)
 
+  const handleMobileNav = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setIsOpen(false);
+    setTimeout(() => {
+      document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+    }, 400); // give enough time for menu exit animation
+  }
+
   return (
     <motion.div 
       initial={{ y: -100, opacity: 0 }}
@@ -115,7 +123,7 @@ const Navbar1 = () => {
                   transition={{ delay: i * 0.1 + 0.1 }}
                   exit={{ opacity: 0, x: 20 }}
                 >
-                  <Link href={item.href} className="text-base text-gray-900 font-medium" onClick={toggleMenu}>
+                  <Link href={item.href} className="text-base text-gray-900 font-medium" onClick={(e) => handleMobileNav(e, item.href)}>
                     {item.name}
                   </Link>
                 </motion.div>
@@ -128,13 +136,13 @@ const Navbar1 = () => {
                 exit={{ opacity: 0, y: 20 }}
                 className="pt-6"
               >
-                <Link
-                  href="/start"
-                  className="inline-flex items-center justify-center w-full px-5 py-3 text-base bg-black text-white rounded-full hover:bg-gray-800 transition-colors cursor-pointer"
-                  onClick={toggleMenu}
-                >
-                  Comenzar Proyecto
-                </Link>
+                  <Link
+                    href="#services"
+                    className="inline-flex items-center justify-center w-full px-5 py-3 text-base bg-black text-white rounded-full hover:bg-gray-800 transition-colors cursor-pointer"
+                    onClick={(e) => handleMobileNav(e, "#services")}
+                  >
+                    Comenzar Proyecto
+                  </Link>
               </motion.div>
             </div>
           </motion.div>
