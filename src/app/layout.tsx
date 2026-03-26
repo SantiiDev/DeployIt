@@ -13,6 +13,9 @@ const lato = Lato({
 export const metadata: Metadata = {
   title: "DeployIt — Ingeniería Web para Marcas Modernas",
   description: "Desarrollo web profesional: landing pages ultrarrápidas, tiendas online escalables y aplicaciones a medida. Potenciado por Next.js, React y un stack moderno.",
+  icons: {
+    icon: "/logo2.png",
+  },
 };
 
 export default function RootLayout({

@@ -55,34 +55,17 @@ function Footerdemo() {
               <a href="#faq" className="block transition-colors hover:text-primary">
                 Preguntas
               </a>
-              <a href="#about" className="block transition-colors hover:text-primary">
-                Acerca de 
-              </a>
-              <a href="#contact" className="block transition-colors hover:text-primary">
-                Contacto
-              </a>
             </nav>
           </div>
           <div>
             <h3 className="mb-4 text-lg font-semibold">Contáctanos</h3>
             <address className="space-y-2 text-sm not-italic">
-              <p>DeployIt Web Studio</p>
-              <p>100 Innovation Drive</p>
-              <p>Tech City, TC 12345</p>
-              <p>Email: hello@deployit.dev</p>
+              <p>Email: <a href="mailto:teamdeployit@gmail.com" className="hover:text-primary transition-colors">teamdeployit@gmail.com</a></p>
             </address>
           </div>
           <div className="relative">
             <h3 className="mb-4 text-lg font-semibold">Síguenos</h3>
             <div className="mb-6 flex space-x-4">
-              <a href="#" className="inline-flex items-center justify-center h-10 w-10 rounded-full border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors" title="Facebook">
-                <MessageCircle className="h-4 w-4" />
-                <span className="sr-only">Facebook</span>
-              </a>
-              <a href="#" className="inline-flex items-center justify-center h-10 w-10 rounded-full border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors" title="Twitter">
-                <Rss className="h-4 w-4" />
-                <span className="sr-only">Twitter</span>
-              </a>
               <a href="#" className="inline-flex items-center justify-center h-10 w-10 rounded-full border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors" title="Instagram">
                 <Camera className="h-4 w-4" />
                 <span className="sr-only">Instagram</span>

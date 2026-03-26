@@ -62,8 +62,8 @@ export function FaqsSection() {
 			</Accordion>
 			<p className="text-muted-foreground">
 				¿Todavía tienes preguntas? Escríbenos a{' '}
-				<a href="mailto:hello@deployit.dev" className="text-primary hover:underline font-medium">
-					hello@deployit.dev
+				<a href="mailto:teamdeployit@gmail.com" className="text-primary hover:underline font-medium">
+					teamdeployit@gmail.com
 				</a>
 			</p>
 		</div>

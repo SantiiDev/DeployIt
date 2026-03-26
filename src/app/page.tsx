@@ -105,7 +105,7 @@ export default function Home() {
         <div className="flex h-full flex-col md:flex-row">
           {/* Left content */}
           <div className="flex-1 p-8 md:p-16 lg:p-20 relative z-10 flex flex-col justify-center">
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-600 dark:from-neutral-50 dark:to-neutral-400">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-600 dark:from-neutral-50 dark:to-neutral-400 pb-2">
               Ingeniería para tu Web
             </h1>
             <p className="mt-4 md:mt-6 text-neutral-600 dark:text-neutral-300 max-w-lg text-base md:text-lg lg:text-xl">
@@ -140,9 +140,9 @@ export default function Home() {
       {/* ===== Section 2: Evervault Card ===== */}
       <section id="services" className="py-20 md:py-28 max-w-7xl mx-auto w-full px-4 md:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, margin: "-100px" }}
         >
           <div className="text-center mb-12">
@@ -205,9 +205,9 @@ export default function Home() {
       {/* ===== Section 3: Methodology ===== */}
       <section id="methodology" className="py-20 md:py-28 max-w-7xl mx-auto w-full px-4 md:px-6 lg:px-8 relative z-10">
         <motion.div
-           initial={{ opacity: 0, y: 40 }}
+           initial={{ opacity: 0, y: 60 }}
            whileInView={{ opacity: 1, y: 0 }}
-           transition={{ duration: 0.6, ease: "easeOut" }}
+           transition={{ duration: 0.8, ease: "easeOut" }}
            viewport={{ once: true, margin: "-100px" }}
         >
           <div className="text-center mb-16">
@@ -229,9 +229,9 @@ export default function Home() {
       <section id="logos" className="py-12 md:py-16 w-full overflow-hidden">
         <motion.div
           className="w-full"
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, margin: "-100px" }}
         >
           <div className="relative mx-auto w-full">
@@ -249,9 +249,9 @@ export default function Home() {
       {/* ===== Section 5: Testimonials ===== */}
       <section id="testimonials" className="py-20 md:py-28 relative max-w-7xl mx-auto w-full px-4 md:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, margin: "-100px" }}
         >
           <div className="flex flex-col items-center justify-center max-w-[540px] mx-auto">
@@ -287,9 +287,9 @@ export default function Home() {
       {/* ===== Section 6: World Map ===== */}
       <section id="world-map" className="py-20 md:py-28 container mx-auto px-4 md:px-6 lg:px-8 w-full">
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, margin: "-100px" }}
           className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-7xl mx-auto"
         >
@@ -326,9 +326,9 @@ export default function Home() {
       {/* ===== Section 7: FAQ ===== */}
       <section id="faq" className="py-20 md:py-28 max-w-7xl mx-auto w-full px-4 md:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, margin: "-100px" }}
         >
           <FaqsSection />
