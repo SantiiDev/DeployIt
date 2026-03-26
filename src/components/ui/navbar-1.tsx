@@ -90,7 +90,7 @@ const Navbar1 = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 bg-white z-50 pt-24 px-6 md:hidden"
+            className="fixed inset-0 bg-white z-50 pt-24 px-6 md:hidden pointer-events-auto"
             initial={{ opacity: 0, x: "100%" }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
