@@ -19,64 +19,59 @@ import { motion } from "framer-motion";
 /* ——— Section 5: Testimonials Data ——— */
 const testimonials = [
   {
-    text: "DeployIt duplicó nuestra tasa de conversión en un mes. El código es inmaculado.",
-    image: "https://randomuser.me/api/portraits/women/1.jpg",
-    name: "Briana Patton",
-    role: "CEO, TechStartup",
+    text: "DeployIt transformó la presencia digital de Boostify. Automatizamos procesos que antes nos llevaban horas. Una ingeniería impecable.",
+    image: "https://randomuser.me/api/portraits/men/10.jpg",
+    name: "Santino Gallo",
+    role: "Founder, Boostify",
   },
   {
-    text: "Velocidad increíble. Entregaron una plataforma de e-commerce compleja antes de lo previsto.",
-    image: "https://randomuser.me/api/portraits/men/2.jpg",
-    name: "Bilal Ahmed",
-    role: "Director de Operaciones",
+    text: "La tienda online de Rita nunca se vio tan bien. Las ventas online crecieron desde el primer mes. ¡Increíble trabajo!",
+    image: "https://randomuser.me/api/portraits/women/11.jpg",
+    name: "Giulia Gagliardini",
+    role: "Dueña, Rita",
   },
   {
-    text: "Nuestra nueva web app escala sin esfuerzo. La arquitectura en Next.js maneja picos masivos de tráfico.",
-    image: "https://randomuser.me/api/portraits/women/3.jpg",
-    name: "Saman Malik",
-    role: "CTO",
+    text: "DeployIt nos dio una plataforma de reservas que nuestros clientes adoran. Elegante, rápida y sin fricciones.",
+    image: "https://randomuser.me/api/portraits/women/12.jpg",
+    name: "Yazmín Alí",
+    role: "Manager, Dakota",
   },
   {
-    text: "Trabajar con DeployIt es como tener un equipo interno de ingeniería de élite.",
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
-    name: "Omar Raza",
-    role: "Fundador",
+    text: "FusionCars necesitaba presencia online seria. DeployIt entregó exactamente eso: una web que transmite confianza y profesionalismo.",
+    image: "https://randomuser.me/api/portraits/men/13.jpg",
+    name: "Alejandro Gallo",
+    role: "Dueño, FusionCars",
   },
   {
-    text: "De Figma a producción en tiempo récord. Nuestras nuevas landing pages literalmente vuelan.",
-    image: "https://randomuser.me/api/portraits/women/5.jpg",
-    name: "Zainab Hussain",
-    role: "Directora de Marketing",
+    text: "Utopic pasó de ser una tienda local a vender a nivel nacional. La plataforma que construyeron es robusta y se ve premium.",
+    image: "https://randomuser.me/api/portraits/men/14.jpg",
+    name: "Santiago Siena",
+    role: "Dueño, Utopic",
   },
   {
-    text: "La integración con CMS Headless nos da verdadera flexibilidad sin comprometer el rendimiento.",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-    name: "Aliza Khan",
-    role: "Gestora de Contenidos",
+    text: "En pocas semanas teníamos un sitio que superó nuestras expectativas. El equipo de DeployIt entiende el negocio, no solo el código.",
+    image: "https://randomuser.me/api/portraits/men/15.jpg",
+    name: "Alberto Nieri",
+    role: "CEO, NieriGroup",
   },
   {
-    text: "Nuestra tasa de rebote se desplomó después de que DeployIt optimizó nuestras core web vitals.",
-    image: "https://randomuser.me/api/portraits/men/7.jpg",
-    name: "Farhan Siddiqui",
-    role: "Growth Lead",
+    text: "Nuestra tasa de conversión se disparó. DeployIt sabe cómo diseñar para resultados reales, no solo para que se vea lindo.",
+    image: "https://randomuser.me/api/portraits/men/16.jpg",
+    name: "José Masachessi",
+    role: "Director Comercial, MasaTech",
   },
   {
-    text: "Entienden perfectamente cómo construir experiencias web que priorizan la interacción real del usuario.",
-    image: "https://randomuser.me/api/portraits/women/8.jpg",
-    name: "Sana Sheikh",
-    role: "Product Manager",
-  },
-  {
-    text: "Usar DeployIt para nuestro desarrollo web fue la mejor decisión que tomamos en el Q3.",
-    image: "https://randomuser.me/api/portraits/men/9.jpg",
-    name: "Hassan Ali",
-    role: "E-commerce Manager",
+    text: "Trabajar con DeployIt fue una experiencia de primer nivel. Comunicación clara, tiempos cumplidos y un resultado extraordinario.",
+    image: "https://randomuser.me/api/portraits/men/17.jpg",
+    name: "Nicolás Carracedo",
+    role: "Fundador, Carracedo Studio",
   },
 ];
 
 const firstColumn = testimonials.slice(0, 3);
 const secondColumn = testimonials.slice(3, 6);
-const thirdColumn = testimonials.slice(6, 9);
+const thirdColumn = testimonials.slice(6, 8);
+
 
 
 
