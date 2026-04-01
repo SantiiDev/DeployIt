@@ -62,7 +62,7 @@ const testimonials = [
   },
   {
     text: "Trabajar con DeployIt fue una experiencia de primer nivel. Comunicación clara, tiempos cumplidos y un resultado extraordinario.",
-    image: "https://randomuser.me/api/portraits/men/17.jpg",
+    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&auto=format&fit=crop&q=60",
     name: "Nicolás Carracedo",
     role: "Fundador, Carracedo Studio",
   },
