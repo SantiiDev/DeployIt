@@ -20,31 +20,31 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     text: "DeployIt transformó la presencia digital de Boostify. Automatizamos procesos que antes nos llevaban horas. Una ingeniería impecable.",
-    image: "https://randomuser.me/api/portraits/men/10.jpg",
+    image: "/santino-gallo.jpg",
     name: "Santino Gallo",
     role: "Founder, Boostify",
   },
   {
     text: "La tienda online de Rita nunca se vio tan bien. Las ventas online crecieron desde el primer mes. ¡Increíble trabajo!",
-    image: "https://randomuser.me/api/portraits/women/11.jpg",
+    image: "/giulia-gagliardini.jpg",
     name: "Giulia Gagliardini",
     role: "Dueña, Rita",
   },
   {
     text: "DeployIt nos dio una plataforma de reservas que nuestros clientes adoran. Elegante, rápida y sin fricciones.",
-    image: "https://randomuser.me/api/portraits/women/12.jpg",
+    image: "/yazmin-ali.jpg",
     name: "Yazmín Alí",
     role: "Manager, Dakota",
   },
   {
     text: "FusionCars necesitaba presencia online seria. DeployIt entregó exactamente eso: una web que transmite confianza y profesionalismo.",
-    image: "https://randomuser.me/api/portraits/men/13.jpg",
+    image: "/alejandro-gallo.jpg",
     name: "Alejandro Gallo",
     role: "Dueño, FusionCars",
   },
   {
     text: "Utopic pasó de ser una tienda local a vender a nivel nacional. La plataforma que construyeron es robusta y se ve premium.",
-    image: "https://randomuser.me/api/portraits/men/14.jpg",
+    image: "/santiago-siena.jpg",
     name: "Santiago Siena",
     role: "Dueño, Utopic",
   },
