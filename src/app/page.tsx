@@ -56,7 +56,7 @@ const testimonials = [
   },
   {
     text: "Nuestra tasa de conversión se disparó. DeployIt sabe cómo diseñar para resultados reales, no solo para que se vea lindo.",
-    image: "https://randomuser.me/api/portraits/men/16.jpg",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&auto=format&fit=crop&q=60",
     name: "José Masachessi",
     role: "Director Comercial, MasaTech",
   },
